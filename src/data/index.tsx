@@ -1,7 +1,11 @@
 import React from 'react'
-import InstagramIcon from '@mui/icons-material/Instagram'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import GitHubIcon from '@mui/icons-material/GitHub';
+// import TelegramIcon from '@mui/icons-material/Telegram';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import TwitterIcon from '@mui/icons-material/Twitter';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import YouTubeIcon from '@mui/icons-material/YouTube';
 
 interface AboutMeProps {
   name: string // your name or nickname, also use for the header
@@ -45,7 +49,11 @@ export const projects: ProjectProps[] = []
 interface SocialProps {
   name: String // name of the social media/platform
   link: string // link to your social media/platform profile
-  icon: any // icon of the social media/platform
+  icon: React.ReactNode // icon of the social media/platform
 }
+// is set to React.ReactNode to enforce using the Icon components provided by material-ui
+// https://material-ui.com/components/icons/
+// above theres some icons already imported from material-ui, just need to uncoment the import to use them
+// Example: { name: 'Github', link: 'https://github.com', icon: <GitHubIcon /> }
 
 export const socials: SocialProps[] = []
