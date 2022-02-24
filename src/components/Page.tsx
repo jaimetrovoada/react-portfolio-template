@@ -28,6 +28,11 @@ interface HideOnScrollProps {
   children: React.ReactElement
 }
 
+/**
+ *  material ui function to hide the app bar when scrolling down
+ * @param {any} props
+ * @return {React.ReactNode}
+ */
 function HideOnScroll(props: HideOnScrollProps) {
   const { children, window } = props
   // Note that you normally won't need to set the window ref as useScrollTrigger
