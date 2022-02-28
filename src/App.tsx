@@ -4,7 +4,7 @@ import { Page } from 'components'
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import { gruvbox, catppuccin, tokyonight } from 'style/theme'
-import { AboutMe, Projects, Socials, Bonus, Skills } from 'views'
+import { AboutMe, Projects, Socials, Bonus, Skills, Work } from 'views'
 import { SelectChangeEvent } from '@mui/material/Select'
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
       <Page themeChanger={handleThemeChange} currentTheme={theme}>
         <AboutMe />
         <Skills />
+        <Work />
         <Socials />
         <Bonus />
         <Projects />

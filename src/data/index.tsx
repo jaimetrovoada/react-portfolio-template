@@ -57,3 +57,12 @@ interface SocialProps {
 // Example: { name: 'Github', link: 'https://github.com', icon: <GitHubIcon /> }
 
 export const socials: SocialProps[] = []
+
+interface WorkProps {
+  company: string // name of the company
+  position: string // position in the company
+  period: string // period of time in the company
+  description?: string // optional, description of the work
+}
+
+export const work: WorkProps[] = []
