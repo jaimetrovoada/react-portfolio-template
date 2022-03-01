@@ -42,6 +42,14 @@ The idea is to fill each properties with the needed information, there is some c
 
 Also types are there to help you just in case
 
+# Images
+
+to add an avatar create a image folder in the public folder and add the image you want to use as avatar
+
+to replace the react logo with your own logo, you need to generate a favicon and add it to the public folder. you can use this tool https://favicon.io/
+
+then copy the files generated to the public folder and follow the instructions on how to modify the index.html file, replace what's written in the manifest.json file with what's in the site.manifest file.
+
 ## Deploy
 
 This was made to be deployed using GitHub Pages as your user webpage. As so, you need to enable github pages in your repo settings.
