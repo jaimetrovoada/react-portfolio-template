@@ -28,13 +28,13 @@ Finally, open the terminal in the project root directory, then run `npm install`
 
 # Setup
 
-## Theme
+### Theme
 
 The theme file can be found in /src/styles/theme.tsx
 
 Reference to the material ui doc page on how to make changes to it
 
-## Data
+### Data
 
 All texts/information to be presented are stored in a config file. You can find it at /src/data/index.tsx
 
@@ -42,7 +42,7 @@ The idea is to fill each properties with the needed information, there is some c
 
 Also types are there to help you just in case
 
-# Images
+### Images
 
 to add an avatar create a image folder in the public folder and add the image you want to use as avatar
 
@@ -50,13 +50,20 @@ to replace the react logo with your own logo, you need to generate a favicon and
 
 then copy the files generated to the public folder and follow the instructions on how to modify the index.html file, replace what's written in the manifest.json file with what's in the site.manifest file.
 
-## Deploy
+### package.json
+
+in the name section write the name of the repo, for example: johndoe.github.io
+
+and in the homepage section write the url of the repo, for example: https://johndoe.github.io/
+or if you have a custom domain use that instead, for example: https://johndoe.me/ and add the CNAME file provided by your domain provider to public folder
+
+# Deploy
 
 This was made to be deployed using GitHub Pages as your user webpage. As so, you need to enable github pages in your repo settings.
 
 The necessary packages, scripts, and GitHub workflow/actions are already present so it should require minimal setup to get it working.
 
-If you intend to use a custom domain you'll need to include a CNAME file in the public folder (/public), and might also want to look up with ur domain provider if there's additional setup required.
+If you intend to use a custom domain you'll need to include a CNAME file in the public folder (/public), and might also want to look up with your domain provider if there's additional setup required.
 
 # Support
 
